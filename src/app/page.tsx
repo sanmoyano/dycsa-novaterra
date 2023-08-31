@@ -8,8 +8,8 @@ export default function Home () {
       <p className='font-normal'>Dycsa - Casa Grande Laplace</p>
       <p className='font-bold'>Dycsa - Casa Grande Laplace</p>
       <div>
-        <Button content='Conoce más' onClick={() => console.log('hola')} />
-        <Button transparent content='Conoce más' onClick={() => console.log('hola')} />
+        <Button content='Contactanos' onClick={() => console.log('hola')} />
+        <Button transparent content='Conoce más' icon=' →' onClick={() => console.log('hola')} />
       </div>
     </div>
   )
