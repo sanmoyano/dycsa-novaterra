@@ -1,10 +1,12 @@
 import React from 'react'
 
+import HeroTitle from '@/components/common/title'
+
 const HeroSection = () => {
   return (
-    <div className='flex flex-col justify-center items-center bg-hero-section bg-cover bg-no-repeat bg-center h-screen w-full'>
-      <div className='w-full h-screen flex justify-center items-center'>
-        <p className='bg-red'>Hero section</p>
+    <div className='bg-hero-section bg-cover bg-no-repeat bg-center bg-fixed w-screen h-screen flex items-center justify-center'>
+      <div className='p-12 w-full h-full'>
+        <HeroTitle content='HERO' />
       </div>
     </div>
   )

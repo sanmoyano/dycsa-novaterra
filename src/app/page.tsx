@@ -7,5 +7,3 @@ export default function Home () {
     </main>
   )
 }
-
-// <main className='w-full h-screen relative px-3.5 md:px-5 lg:px-12'></main>
