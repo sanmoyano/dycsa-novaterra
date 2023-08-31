@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('/public/images/portada-casa-grande.png')"
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'hero-section': "url('/images/portada-casa-grande.png')",
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
       colors: {
         primary: '#154d82',

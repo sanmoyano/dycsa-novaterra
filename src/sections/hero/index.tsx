@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className='bg-[url(/public/images/portada-casa-grande.png)] bg-cover bg-no-repeat bg-center bg-fixed h-screen w-full'>
+    <div className='bg-hero-section bg-cover bg-no-repeat bg-center h-screen w-full'>
       HeroSection
     </div>
   )
