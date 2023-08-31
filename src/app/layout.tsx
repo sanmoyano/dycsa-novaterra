@@ -4,25 +4,25 @@ import localFont from 'next/font/local'
 
 import type { Metadata } from 'next'
 
-const pangramSans = localFont({
+const pangram = localFont({
   src: [
     {
       path: './fonts/PPPangramSans-Light.otf',
       weight: '200',
-      style: 'ligth'
+      style: 'normal'
     },
     {
       path: './fonts/PPPangramSans-Medium.otf',
       weight: '400',
-      style: 'medium'
+      style: 'normal'
     },
     {
       path: './fonts/PPPangramSans-Bold.otf',
       weight: '800',
-      style: 'bold'
+      style: 'normal'
     }
   ],
-  display: 'swap'
+  variable: '--font-pangram-sans'
 })
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 export default function RootLayout ({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={pangramSans.className}>
+      <body className={`${pangram.variable}`}>
         {children}
       </body>
     </html>
