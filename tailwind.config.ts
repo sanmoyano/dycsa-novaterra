@@ -22,7 +22,15 @@ const config: Config = {
       }
     }
   },
-  plugins: []
+  plugins: [],
+  safelist: [
+    'bg-primary',
+    'text-primary',
+    'bg-secondary',
+    'text-white',
+    'bg-hover',
+    'bg-gray'
+  ]
 }
 
 export default config
