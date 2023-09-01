@@ -10,9 +10,11 @@ const HeroSection: React.FC = () => {
     <>
       <div className='-z-10 fixed w-screen h-screen'>
         <Image
+          priority
           alt='casa grnade'
           layout='fill'
           objectFit='cover'
+          quality={100}
           src='/images/portada-casa-grande.jpg'
         />
       </div>
