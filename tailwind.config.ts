@@ -13,11 +13,19 @@ const config: Config = {
         'hero-section': "url('/images/portada-casa-grande.jpg')"
       },
       colors: {
-        primary: '#154d82',
-        secondary: '#ea3237',
         white: '#f5f5f5',
-        gray: '#ececec',
-        hover: '#bf3538'
+        primary: {
+          100: '#154d82',
+          200: 'rgba(21,77,130,.25)'
+        },
+        secondary: {
+          100: '#ea3237',
+          200: '#bf3538'
+        },
+        gray: {
+          100: '#ececec',
+          200: 'rgba(236,236,236,.25)'
+        }
       }
     }
   },
