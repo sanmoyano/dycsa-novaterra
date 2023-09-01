@@ -12,8 +12,10 @@ const HeroSection: React.FC = () => {
         <Image
           priority
           alt='casa grnade'
+          blurDataURL='/images/portada-blur-casa-grande.jpg'
           layout='fill'
           objectFit='cover'
+          placeholder='blur'
           quality={100}
           src='/images/portada-casa-grande.jpg'
         />
