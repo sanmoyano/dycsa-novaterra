@@ -1,11 +1,15 @@
 import React from 'react'
 
 type TitleProps = {
-  content:string
+  content:string,
+  span:string
 }
-const HeroTitle = ({ content }: TitleProps) => {
+const HeroTitle: React.FC<TitleProps> = ({ content, span }) => {
   return (
-    <p className='font-bold text-white text-4xl md:text-6xl lg:text-8xl'>{content}</p>
+    <p className='font-normal text-white text-4xl md:text-6xl lg:text-8xl'>
+      {content}
+      <span className='font-bold'>{span}</span>
+    </p>
   )
 }
 

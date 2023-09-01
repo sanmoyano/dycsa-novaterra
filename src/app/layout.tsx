@@ -34,6 +34,11 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
   return (
     <html lang='en'>
       <body className={`${pangram.variable}`}>
+        <nav className='flex flex-row absolute'>
+          <p>item</p>
+          <p>item</p>
+          <p>item</p>
+        </nav>
         {children}
       </body>
     </html>
