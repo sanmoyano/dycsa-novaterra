@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <nav className='w-full flex flex-wrap absolute items-center justify-between px-3.5 md:px-6 lg:px-12 mt-3.5 md:mt-12'>
+      <nav className='w-full flex flex-wrap fixed items-center justify-between px-3.5 md:px-6 lg:px-12 mt-3.5 md:mt-12'>
         <Logo />
         <button aria-controls='navbar-default' aria-expanded={isAria} className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200' data-collapse-toggle='navbar-default' type='button' onClick={handleOpenCloseMenu}>
           <span className='sr-only'>Open main menu</span>
