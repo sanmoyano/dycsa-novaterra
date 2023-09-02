@@ -16,8 +16,6 @@ const Header: React.FC = () => {
     setAria(false)
   }
 
-  console.log(isAria)
-
   return (
     <header>
       <nav className='w-full flex flex-wrap absolute items-center justify-between px-3.5 md:px-6 lg:px-12 mt-3.5 md:mt-12'>
