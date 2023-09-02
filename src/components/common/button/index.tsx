@@ -5,11 +5,12 @@ type ButtonProps = {
   onClick: () => void
   transparent?: boolean
   icon?: JSX.Element | string
+  cssProps?:string
 }
 
-const Button = ({ content, onClick, transparent, icon }: ButtonProps) => {
+const Button = ({ content, onClick, transparent, icon, cssProps }: ButtonProps) => {
   return (
-    <button className={`${!transparent ? 'bg-secondary-100 hover:bg-secondary-200' : 'bg-transparent hover:bg-gray-200'} text-white font-normal py-2 px-4 rounded transition-all duration-500`} onClick={onClick}>
+    <button className={`${!transparent ? 'bg-secondary-100 hover:bg-secondary-200' : 'bg-transparent hover:bg-gray-200'} text-white font-normal py-2 px-4 rounded transition-all duration-500 ${cssProps}`} onClick={onClick}>
       <span>{content}</span>
       <span>{icon}</span>
     </button>
