@@ -13,7 +13,7 @@ const config: Config = {
         'hero-section': "url('/images/portada-casa-grande.jpg')"
       },
       colors: {
-        white: '#f5f5f5',
+        white: '#fcfcfc',
         primary: {
           100: '#154d82',
           200: 'rgba(21,77,130,.25)'
