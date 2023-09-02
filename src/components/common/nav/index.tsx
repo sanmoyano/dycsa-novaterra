@@ -9,9 +9,11 @@ type NavProps = {
 
 const NavItem: React.FC<NavProps> = ({ url, content, props }) => {
   return (
-    <Link href={url} {...props}>
-      <span className='underline-text text-lg'>{content}</span>
-    </Link>
+    <li>
+      <Link href={url} {...props} className='block'>
+        <span aria-current='page' className='underline-text text-lg'>{content}</span>
+      </Link>
+    </li>
   )
 }
 
