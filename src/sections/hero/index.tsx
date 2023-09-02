@@ -6,19 +6,20 @@ import Image from 'next/image'
 import HeroTitle from '@/components/common/title'
 import Button from '@/components/common/button'
 
+import portadaImage from '../../../public/images/portada-casa-grande.jpg'
+
 const HeroSection: React.FC = () => {
   return (
     <>
       <div className='-z-10 fixed w-screen h-screen'>
         <Image
           priority
-          alt='casa grnade'
-          blurDataURL='/images/portada-blur-casa-grande.jpg'
+          alt='depto-balcon-portada-casa-grande-laplace'
           layout='fill'
           objectFit='cover'
           placeholder='blur'
-          quality={100}
-          src='/images/portada-casa-grande.jpg'
+          quality={80}
+          src={portadaImage}
         />
       </div>
       <div className='flex flex-col justify-center w-screen h-screen bg-gradient-to-b from-[rgba(0,0,0,.5)] to-transparent'>
