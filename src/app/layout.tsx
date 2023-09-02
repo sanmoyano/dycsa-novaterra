@@ -2,6 +2,8 @@ import React from 'react'
 import './globals.css'
 import localFont from 'next/font/local'
 
+import Header from '@/components/presentational/header'
+
 import type { Metadata } from 'next'
 
 const pangram = localFont({
@@ -33,12 +35,14 @@ export const metadata: Metadata = {
 export default function RootLayout ({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
+      <head>
+        <link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180' />
+        <link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png' />
+        <link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png' />
+        <link href='/site.webmanifest' rel='manifest' />
+      </head>
       <body className={`${pangram.variable}`}>
-        <nav className='flex flex-row absolute z-10 px-3.5 md:px-6 lg:px-12 mt-12 w-full'>
-          <p className='text-white'>item</p>
-          <p className='text-white'>item</p>
-          <p className='text-white'>item</p>
-        </nav>
+        <Header />
         {children}
       </body>
     </html>
