@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
           layout='fill'
           objectFit='cover'
           placeholder='blur'
-          quality={80}
+          quality={100}
           src={portadaImage}
         />
       </div>
