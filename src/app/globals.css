@@ -10,6 +10,7 @@
     relative 
     transition-all 
     duration-500 
+    cursor-pointer
     before:content-[''] 
     before:absolute 
     before:bottom-0 
