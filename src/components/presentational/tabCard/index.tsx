@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Image from 'next/image'
 
 import Button from '@/components/common/button'
@@ -6,9 +6,11 @@ import Button from '@/components/common/button'
 import { TabProp } from '../tabsList'
 
 const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
+  const divRef = useRef<HTMLDivElement>(null)
+
   return (
-    <div className='flex flex-col lg:flex-row items-center justify-between w-full h-fit mt-6'>
-      <div className='h-[400px] w-full lg:w-[650px] flex flex-col justify-center relative'>
+    <div ref={divRef} className='flex flex-col lg:flex-row items-center justify-evenly w-full h-fit mt-6'>
+      <div className='h-[400px] w-full lg:w-[650px] flex flex-col justify-center relative shadow-lg rounded-xl'>
         <Image
           alt={tabs[activeTab].alt}
           layout='fill'
@@ -19,10 +21,26 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
           style={{ borderRadius: 12 }}
         />
       </div>
-      <div className='flex flex-col w-full mt-6 lg:w-1/2 lg:mt-0'>
-        <h2>{tabs[activeTab].title}</h2>
-        <p>{tabs[activeTab].description}</p>
-        <Button content='Conoce más' onClick={() => console.log('')} />
+      <div className={`flex flex-col justify-center w-full h-[${divRef.current?.offsetHeight}px] mt-6 lg:w-[500px] lg:mt-0`}>
+        <h2 className='text-primary-100 font-bold text-2xl mb-4'>{tabs[activeTab].title}</h2>
+        <p className='text-primary-300 mb-2'>{tabs[activeTab].description}</p>
+        <p className='text-primary-300'>{tabs[activeTab].description}</p>
+        <div className='flex flex-row space-x-8 mt-10'>
+          {/* CARD DATO */}
+          <div className='flex flex-col items-center'>
+            <p className='font-bold text-4xl text-center text-yellow-500'>+12</p>
+            <p className='font-bold text-sm text-center text-primary-300'>DATO</p>
+          </div>
+          <div className='flex flex-col items-center'>
+            <p className='font-bold text-4xl text-center text-blue-500'>+87</p>
+            <p className='font-bold text-sm text-center text-primary-300'>DATO</p>
+          </div>
+          <div className='flex flex-col items-center'>
+            <p className='font-bold text-4xl text-center text-green-500'>+136</p>
+            <p className='font-bold text-sm text-center text-primary-300'>DATO</p>
+          </div>
+        </div>
+        <Button content='Conoce más' cssProps='mt-5' onClick={() => console.log('')} />
       </div>
     </div>
   )

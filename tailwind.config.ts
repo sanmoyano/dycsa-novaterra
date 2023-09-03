@@ -16,6 +16,7 @@ const config: Config = {
         white: '#fcfcfc',
         primary: {
           100: '#154d82',
+          300: 'rgba(21,77,130,.8)',
           200: 'rgba(21,77,130,.25)'
         },
         secondary: {
