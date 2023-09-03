@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import HeroTitle from '@/components/common/title'
+import HeroTitle from '@/components/common/heroTitle'
 import Button from '@/components/common/button'
 
 import portadaImage from '../../../public/images/portada-casa-grande.jpg'
