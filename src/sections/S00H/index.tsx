@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
       <div className='-z-10 fixed w-screen h-screen'>
         <Image
           priority
-          alt='depto-balcon-portada-casa-grande-laplace'
+          alt='Dycsa - Gran balcon de departamento en Casa Grande Laplace, con vista al estadio Mario Alberto Kempes'
           layout='fill'
           objectFit='cover'
           placeholder='blur'
