@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 
 import { ITabsInfo } from '@/components/container/tabs'
 
-const DynamicTab = dynamic(() => import('../cardTab/index'))
+const DynamicTab = dynamic(() => import('../tabCard/index'))
 
 export type TabProp = {
   tabs:ITabsInfo[]

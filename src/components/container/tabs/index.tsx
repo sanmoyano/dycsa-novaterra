@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { StaticImageData } from 'next/image'
 
-import Tabs from '@/components/presentational/tabs'
+import Tabs from '@/components/presentational/tabsList'
 
 import complejoImg from '../../../../public/images/tab-complejo-casa-grande.jpg'
 import deptoImg from '../../../../public/images/tab-depto-casa-grande.jpg'

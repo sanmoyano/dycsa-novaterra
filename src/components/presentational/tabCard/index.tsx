@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import Button from '@/components/common/button'
 
-import { TabProp } from '../tabs'
+import { TabProp } from '../tabsList'
 
 const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
   return (
