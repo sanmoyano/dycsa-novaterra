@@ -6,7 +6,7 @@ type TitleProps = {
 }
 const HeroTitle: React.FC<TitleProps> = ({ content, span }) => {
   return (
-    <p className='font-normal text-white text-4xl md:text-6xl lg:text-8xl'>
+    <p className='font-normal text-white text-4xl md:text-6xl lg:text-8xl w-fit'>
       {content}
       <span className='font-bold'>{span}</span>
     </p>
