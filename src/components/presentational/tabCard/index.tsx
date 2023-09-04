@@ -9,7 +9,7 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
   const divRef = useRef<HTMLDivElement>(null)
 
   return (
-    <div ref={divRef} className='flex flex-col lg:flex-row items-center justify-evenly w-full h-fit mt-6'>
+    <div ref={divRef} className='transition ease-in-out duration-300 flex flex-col lg:flex-row items-center justify-evenly w-full h-fit mt-6'>
       <div className='h-[400px] w-full lg:w-[650px] flex flex-col justify-center relative shadow-lg rounded-xl'>
         <Image
           priority
@@ -23,7 +23,7 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
         />
       </div>
       <div className={`flex flex-col justify-evenly w-full h-[${divRef.current?.offsetHeight}px] mt-6 lg:w-[500px] lg:mt-0`}>
-        <h2 className='text-primary-100 font-bold text-2xl mb-4'>{tabs[activeTab].title}</h2>
+        <h2 className='text-primary-100 font-bold text-2xl'>{tabs[activeTab].title}</h2>
         <p className='text-primary-300 mb-2'>{tabs[activeTab].description}</p>
         <p className='text-primary-300'>{tabs[activeTab].description}</p>
         <div className='flex flex-row space-x-8 mt-6'>
