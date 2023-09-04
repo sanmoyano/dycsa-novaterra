@@ -19,7 +19,7 @@ export interface ITabsInfo {
 const tabs: ITabsInfo[] = [
   {
     tab: 'Complejo',
-    title: 'El complejo, el lugar en el vas a vivir',
+    title: 'El complejo, el lugar en el que vas a vivir',
     description: 'Lorem ipsum dolor sit amet consectetur. Nullam velit cras molestie elit sem et gravida quis sodales. Nisl nunc odio pellentesque velit. In commodo eu aenean sem.',
     img: complejoImg,
     alt: 'Dycsa - Vista aera del complejo, cancha de tenis, playa de estacionamiento y pileta.'

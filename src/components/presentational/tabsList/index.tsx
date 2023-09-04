@@ -1,9 +1,8 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
 
 import { ITabsInfo } from '@/components/container/tabs'
 
-const DynamicTab = dynamic(() => import('../tabCard/index'))
+import TabCard from '../tabCard/index'
 
 export type TabProp = {
   tabs:ITabsInfo[]
@@ -29,7 +28,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, handleActiveTab }) => {
         </ul>
       </div>
       <div className='hidden md:flex justify-center items-center w-full h-full'>
-        <DynamicTab activeTab={activeTab} tabs={tabs} />
+        <TabCard activeTab={activeTab} tabs={tabs} />
       </div>
     </>
   )
