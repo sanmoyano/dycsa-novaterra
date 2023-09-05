@@ -1,27 +1,21 @@
-'use client'
-import React, { useRef } from 'react'
+import React from 'react'
 
 import Title from '@/components/common/titles'
 import Section from '@/components/common/section'
-import TowerCard from '@/components/presentational/towerCard'
-import useVisible from '@/hooks/useVisible'
+import VisibleContainer from '@/components/container/visibleContainer'
+import SubTitle from '@/components/common/subTitle'
+import TowersContainer from '@/components/container/towers'
 
 const SectionDos:React.FC = () => {
-  const ref = useRef<HTMLDivElement>(null)
-  const isVisible = useVisible(ref)
-
   return (
     <Section>
-      <div ref={ref} className={`flex flex-col items-center space-y-2 justify-center mt-12 transition-opacity ease-in duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-        <p className='text-secondary-100 w-fit text-sm'>Descubre la Elegancia y la Comodidad</p>
+      <VisibleContainer>
+        <SubTitle content='Descubre la Elagancia y la Comodidad' cssProps='text-secondary-100' />
         <Title content='Visión Integran del Espacio' />
         <div className='w-full h-full flex flex-col space-y-5 md:flex-row md:space-y-0 items-center justify-evenly pt-8'>
-          <TowerCard />
-          <div className='bg-green-500 h-[400px] lg:h-[600px] aspect-[4/5] flex flex-col justify-center relative shadow-lg rounded-xl'>
-            <p>card2</p>
-          </div>
+          <TowersContainer />
         </div>
-      </div>
+      </VisibleContainer>
     </Section>
   )
 }

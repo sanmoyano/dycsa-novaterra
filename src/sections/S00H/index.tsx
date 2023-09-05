@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           <HeroTitle content='Acá arriba, la vista es' span=' mejor.' />
           <div className='flex flex-row mt-10 w-full space-x-5'>
             <Button content='Contactanos' onClick={() => console.log('contacto')} />
-            <Button transparent content='Conoce más' icon=' →' onClick={() => console.log('mas')} />
+            <Button transparent content='Conoce más' icon={<path d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3' strokeLinecap='round' strokeLinejoin='round' />} onClick={() => console.log('mas')} />
           </div>
         </div>
       </div>
