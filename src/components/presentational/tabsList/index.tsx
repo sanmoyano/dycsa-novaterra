@@ -17,7 +17,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, handleActiveTab }) => {
   return (
     <>
       <div className='text-center'>
-        <ul className='flex flex-wrap w-full md:w-96 justify-between'>
+        <ul className='flex flex-wrap w-full md:w-96 justify-between mt-2'>
           {tabs.map((tab, i) => (
             <li key={i} className={`block ${activeTab === i ? 'opacity-100' : 'opacity-40'} text-primary-100 font-normal text-lg text-center transition ease-in-out duration-500 mx-1`} onClick={() => handleActiveTab(i)}>
               <span className='underline-text before:bg-primary-100 before:h-0.5'>

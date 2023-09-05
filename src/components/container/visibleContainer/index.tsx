@@ -1,0 +1,21 @@
+'use client'
+import React, { useRef } from 'react'
+
+import useVisible from '@/hooks/useVisible'
+
+type Props = {
+  children: React.ReactNode
+}
+
+const VisibleContainer: React.FC<Props> = ({ children }) => {
+  const ref = useRef<HTMLDivElement>(null)
+  const isVisible = useVisible(ref)
+
+  return (
+    <div ref={ref} className={`flex flex-col items-center space-y-2 justify-center mt-12 transition-opacity ease-in duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      {children}
+    </div>
+  )
+}
+
+export default VisibleContainer
