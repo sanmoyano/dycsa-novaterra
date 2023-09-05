@@ -45,9 +45,9 @@ const TowersContainer = () => {
       <TowerCard
         key={index}
         handleOpen={() => handleOpen(index)}
-        {...tower}
         index={index}
         isOpen={isOpen}
+        {...tower}
       />
     ))
   )
