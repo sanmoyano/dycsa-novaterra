@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 
 import Button from '@/components/common/button'
 import { ITowersInfo } from '@/components/container/towers'
