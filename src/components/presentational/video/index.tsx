@@ -5,7 +5,7 @@ import { VideoProps } from '@/components/container/listVideo'
 
 const VideoItem: React.FC<VideoProps> = ({ icon, title, description, link }) => {
   return (
-    <div className='flex flex-col text-primary-100 space-y-2 justify-center'>
+    <div className='flex flex-col text-primary-100 space-y-2 justify-start md:justify-center h-[265px]'>
       <svg className='w-8 h-8' fill='none' stroke='currentColor' strokeWidth={1.5} viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
         {icon}
       </svg>

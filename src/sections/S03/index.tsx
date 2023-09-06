@@ -12,7 +12,7 @@ const SectionTres = () => {
       <VisibleContainer>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-32 mt-12'>
           <div className='flex flex-col space-y-4 items-start'>
-            <Title content='Amplia tu calidad de vida. Viví a lo grande' cssProps='lg:text-6xl mb-5 lg:mb-0 text-center lg:text-left' />
+            <Title content='Amplia tu calidad de vida. Viví a lo grande' cssProps='lg:text-6xl lg:mb-0 text-center lg:text-left' />
             <div className='hidden lg:flex text-primary-100'>
               <svg className='w-[24px] h-[350px]' viewBox='0 0 24 300' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M12.27,0 L12.27,294' fill='none' stroke='currentColor' stroke-miterlimit='10' strokeWidth='2px' />
