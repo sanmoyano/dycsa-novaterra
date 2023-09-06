@@ -43,15 +43,17 @@ const TowersContainer = () => {
   }
 
   return (
-    towers.map((tower, index) => (
-      <TowerCard
-        key={index}
-        handleOpen={() => handleOpen(index)}
-        index={index}
-        isOpen={isOpen}
-        {...tower}
-      />
-    ))
+    <div className='w-full h-full flex flex-col space-y-5 md:flex-row md:space-y-0 items-center justify-evenly pt-10'>
+      {towers.map((tower, index) => (
+        <TowerCard
+          key={index}
+          handleOpen={() => handleOpen(index)}
+          index={index}
+          isOpen={isOpen}
+          {...tower}
+        />
+      ))}
+    </div>
   )
 }
 

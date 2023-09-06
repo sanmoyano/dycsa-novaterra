@@ -12,9 +12,7 @@ const SectionDos:React.FC = () => {
       <VisibleContainer>
         <SubTitle content='Descubre la Elagancia y la Comodidad' cssProps='text-secondary-100' />
         <Title content='Visión Integran del Espacio' />
-        <div className='w-full h-full flex flex-col space-y-5 md:flex-row md:space-y-0 items-center justify-evenly lg:justify-center lg:space-x-20 pt-8'>
-          <TowersContainer />
-        </div>
+        <TowersContainer />
       </VisibleContainer>
     </Section>
   )
