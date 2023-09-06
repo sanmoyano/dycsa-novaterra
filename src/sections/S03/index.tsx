@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import Section from '@/components/common/section'
 import VisibleContainer from '@/components/container/visibleContainer'
@@ -18,6 +19,12 @@ const GridItemInfo: React.FC<GridItemProps> = ({ content, icon, title }) => {
       </svg>
       <p className='text-primary-100 text-xl font-bold'>Title</p>
       <p className='text-primary-300'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ipsum esse sapiente ullam doloremque deserunt.</p>
+      <div className='flex flex-row w-full items-center space-x-1 text-primary-100 font-bold '>
+        <svg className='w-6 h-6' fill='none' stroke='currentColor' strokeWidth={1.5} viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+          <path d='M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59' strokeLinecap='round' strokeLinejoin='round' />
+        </svg>
+        <Link href='/'><p className='text-sm underline-text before:bg-primary-100 before:h-0.5'>ver video</p></Link>
+      </div>
     </div>
   )
 }
