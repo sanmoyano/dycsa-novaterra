@@ -8,8 +8,8 @@ const SectionTres = () => {
   return (
     <Section>
       <VisibleContainer>
-        <div className='grid grid-cols-2 gap-4 mt-12'>
-          <div className='flex flex-col space-y-4 items-start lg:items-center'>
+        <div className='grid grid-cols-2 gap-36 mt-12'>
+          <div className='flex flex-col space-y-4 items-start'>
             <Title content='Aplia tu calidad de vida. Viví a lo grande' cssProps='lg:text-6xl' />
             <div className='text-primary-100'>
               <svg className='w-[24px] h-[250px]' viewBox='0 0 24 300' xmlns='http://www.w3.org/2000/svg'>
@@ -18,7 +18,7 @@ const SectionTres = () => {
               </svg>
             </div>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-8'>
             <p className='bg-primary-100'>datitas</p>
             <p className='bg-primary-100'>datitas</p>
             <p className='bg-primary-100'>datitas</p>
