@@ -3,13 +3,14 @@ import React from 'react'
 type TitleProps = {
   content:string,
   span:string
+  cssProps?:string
 }
-const HeroTitle: React.FC<TitleProps> = ({ content, span }) => {
+const HeroTitle: React.FC<TitleProps> = ({ content, span, cssProps }) => {
   return (
-    <p className='font-normal text-white text-4xl md:text-6xl lg:text-8xl w-fit'>
+    <h1 className={`font-normal text-white text-4xl md:text-6xl lg:text-8xl w-fit ${cssProps}`}>
       {content}
       <span className='font-bold'>{span}</span>
-    </p>
+    </h1>
   )
 }
 
