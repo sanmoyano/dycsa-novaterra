@@ -27,7 +27,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, handleActiveTab }) => {
           ))}
         </ul>
       </div>
-      <div className='flex w-full h-full'>
+      <div className='flex w-full h-ful'>
         <TabCard activeTab={activeTab} tabs={tabs} />
       </div>
     </>
