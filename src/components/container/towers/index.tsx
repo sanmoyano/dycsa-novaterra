@@ -11,6 +11,7 @@ export interface ITowersInfo {
   title:string
   description:string
   img: StaticImageData
+  alt:string
   info:string[]
 }
 
@@ -19,12 +20,14 @@ const towers: ITowersInfo[] = [
     title: 'Torre Suquia',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus labore distinctio nulla expedita dolorum ex cumque rerum, reiciendis delectus!',
     img: torreSuquiaImg,
+    alt: 'Dycsa - Render de frente de Torre Suquia con parque y arboles',
     info: ['Imponente Hall central de ingreso', '8 pisos de departamentos', '1,2 y 3 dormitorios desde 115ms2 hasta 370m2', 'Balcones con asador', 'Carpinteria exterior de aluminio DVH', 'Unidades Domotizadas', 'Cerraduras con control digital']
   },
   {
     title: 'Torre Laplace',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus labore distinctio nulla expedita dolorum ex cumque rerum, reiciendis delectus!',
     img: torreLaplaceImg,
+    alt: 'Dycsa - Render Torre Laplace sobre calle Laplace frente comercial y gente caminando',
     info: ['Frente imponente sobre Avenida Laplace', '2 pisos de departamentos', 'Locales comerciales', 'Parking en planta baja']
   }
 ]
@@ -33,7 +36,6 @@ const TowersContainer = () => {
   const [isOpen, setIsOpen] = useState<boolean[]>(Array(towers.length).fill(false))
 
   const handleOpen = (index:number) => {
-    console.log(isOpen)
     const updateIsOpen = [...isOpen]
 
     updateIsOpen[index] = !updateIsOpen[index]
