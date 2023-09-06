@@ -12,7 +12,7 @@ const VisibleContainer: React.FC<Props> = ({ children }) => {
   const isVisible = useVisible(ref)
 
   return (
-    <div ref={ref} className={`flex flex-col items-center space-y-2 justify-center mt-12 transition-opacity ease-in duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div ref={ref} className={`flex flex-col items-center space-y-2 justify-center min-[1700px]:justify-evenly mt-12 transition-opacity ease-in duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {children}
     </div>
   )
