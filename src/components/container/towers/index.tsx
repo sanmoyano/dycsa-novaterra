@@ -11,7 +11,7 @@ export interface ITowersInfo {
   title:string
   description:string
   img: StaticImageData
-  info:string
+  info:string[]
 }
 
 const towers: ITowersInfo[] = [
@@ -19,13 +19,13 @@ const towers: ITowersInfo[] = [
     title: 'Torre Suquia',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus labore distinctio nulla expedita dolorum ex cumque rerum, reiciendis delectus!',
     img: torreSuquiaImg,
-    info: 'more about'
+    info: ['Imponente Hall central de ingreso', '8 pisos de departamentos', '1,2 y 3 dormitorios desde 115ms2 hasta 370m2', 'Balcones con asador', 'Carpinteria exterior de aluminio DVH', 'Unidades Domotizadas', 'Cerraduras con control digital']
   },
   {
     title: 'Torre Laplace',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus labore distinctio nulla expedita dolorum ex cumque rerum, reiciendis delectus!',
     img: torreLaplaceImg,
-    info: 'more about'
+    info: ['Frente imponente sobre Avenida Laplace', '2 pisos de departamentos', 'Locales comerciales', 'Parking en planta baja']
   }
 ]
 

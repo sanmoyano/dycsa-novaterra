@@ -9,7 +9,7 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
   const divRef = useRef<HTMLDivElement>(null)
 
   return (
-    <div ref={divRef} className='transition ease-in-out duration-300 flex flex-col lg:flex-row items-center justify-evenly w-full h-fit mt-12'>
+    <div ref={divRef} className='transition ease-in-out duration-300 flex flex-col lg:flex-row items-center justify-evenly lg:justify-center lg:space-x-20 w-full h-fit mt-12'>
       <div className='h-[400px] w-full lg:w-[650px] flex flex-col justify-center relative shadow-lg rounded-xl'>
         <Image
           priority
