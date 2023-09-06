@@ -13,10 +13,10 @@ const HeroSection: React.FC = () => {
     <>
       <div className='-z-10 fixed w-screen h-screen'>
         <Image
+          fill
           priority
           alt='Dycsa - Gran balcon de departamento en Casa Grande Laplace, con vista al estadio Mario Alberto Kempes'
-          layout='fill'
-          objectFit='cover'
+          className='object-cover object-center'
           placeholder='blur'
           quality={100}
           src={portadaImage}

@@ -12,14 +12,14 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
     <div ref={divRef} className='transition ease-in-out duration-300 flex flex-col lg:flex-row items-center justify-evenly lg:justify-center lg:space-x-20 w-full h-fit mt-12'>
       <div className='h-[400px] w-full lg:w-[650px] flex flex-col justify-center relative shadow-lg rounded-xl'>
         <Image
+          fill
           priority
           alt={tabs[activeTab].alt}
-          layout='fill'
-          objectFit='cover'
+          className='rounded-xl object-cover object-center'
           placeholder='blur'
           quality={80}
+          sizes='auto'
           src={tabs[activeTab].img}
-          style={{ borderRadius: 12 }}
         />
       </div>
       <div className={`flex flex-col justify-evenly w-full h-[${divRef.current?.offsetHeight}px] mt-6 lg:w-[500px] lg:mt-0`}>
