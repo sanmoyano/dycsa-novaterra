@@ -43,7 +43,7 @@ const TowersContainer = () => {
   }
 
   return (
-    <div className='w-full h-full flex flex-col space-y-5 md:flex-row md:space-y-0 items-center justify-evenly pt-10'>
+    <div className='w-full md:max-w-7xl h-full flex flex-col space-y-5 md:flex-row md:space-y-0 items-center justify-between min-[1025px]:justify-evenly pt-10'>
       {towers.map((tower, index) => (
         <TowerCard
           key={index}

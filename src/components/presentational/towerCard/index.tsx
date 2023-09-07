@@ -30,7 +30,7 @@ const DivContainer: React.FC<DivProps> = ({ children, cssProps }) => {
 
 const TowerCard: React.FC<Tower> = ({ title, description, alt, img, info, handleOpen, isOpen, index }) => {
   return (
-    <div className='h-[400px] lg:h-[600px] overflow-hidden aspect-[4/5] flex flex-col justify-center relative shadow-lg rounded-xl'>
+    <div className='h-[600px] aspect-[9/16] md:h-[400px] md:aspect-[4/5] lg:h-[500px] lg:aspect-[4/5] min-[1025px]:h-[600px] overflow-hidden flex flex-col justify-between md:justify-evenly relative shadow-lg rounded-xl'>
       <Image
         fill
         priority
@@ -65,7 +65,7 @@ const TowerCard: React.FC<Tower> = ({ title, description, alt, img, info, handle
               <svg className='w-6 h-6' fill='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path clipRule='evenodd' d='M3 6a3 3 0 013-3h2.25a3 3 0 013 3v2.25a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm9.75 0a3 3 0 013-3H18a3 3 0 013 3v2.25a3 3 0 01-3 3h-2.25a3 3 0 01-3-3V6zM3 15.75a3 3 0 013-3h2.25a3 3 0 013 3V18a3 3 0 01-3 3H6a3 3 0 01-3-3v-2.25zm9.75 0a3 3 0 013-3H18a3 3 0 013 3V18a3 3 0 01-3 3h-2.25a3 3 0 01-3-3v-2.25z' fillRule='evenodd' />
               </svg>
-              <p className='text-xs lg:text-lg'>{info}</p>
+              <p className='text-xs sm:text-xs min-[1025px]:text-lg'>{info}</p>
             </li>
           ))}
         </ul>
