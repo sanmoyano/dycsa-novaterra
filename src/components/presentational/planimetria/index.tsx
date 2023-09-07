@@ -7,7 +7,7 @@ import { IPlanimetriasProps } from '@/components/container/planimetrias'
 const Planimetria: React.FC<IPlanimetriasProps> = ({ datos, img, title }) => {
   return (
     <div className='flex flex-col'>
-      <div className='relative w-[350px] lg:w-[300px] xl:w-[400px] 2xl:w-[500px] aspect-[16/9]'>
+      <div className='relative w-[350px] lg:w-[300px] xl:w-[400px] 2xl:w-[400px] min-[1792px]:w-[500px] aspect-[16/9]'>
         <Image
           fill
           alt='img'
