@@ -10,7 +10,7 @@ const SectionTres = () => {
   return (
     <Section>
       <VisibleContainer>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-32 mt-12'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 xl:gap-12 justify-center'>
           <TitleS03 />
           <VideosContainer />
         </div>

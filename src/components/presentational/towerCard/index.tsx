@@ -30,7 +30,7 @@ const DivContainer: React.FC<DivProps> = ({ children, cssProps }) => {
 
 const TowerCard: React.FC<Tower> = ({ title, description, alt, img, info, handleOpen, isOpen, index }) => {
   return (
-    <div className='h-[600px] aspect-[9/16] md:h-[400px] md:aspect-[4/5] lg:h-[500px] lg:aspect-[4/5] min-[1025px]:h-[600px] overflow-hidden flex flex-col justify-between md:justify-evenly relative shadow-lg rounded-xl'>
+    <div className='h-[600px] aspect-[9/16] md:h-[400px] md:aspect-[4/5] lg:h-[500px] lg:aspect-[4/5] min-[1025px]:h-[600px] overflow-hidden flex flex-col relative shadow-lg rounded-xl'>
       <Image
         fill
         priority
