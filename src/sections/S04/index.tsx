@@ -6,7 +6,7 @@ import PlanimetriasContainer from '@/components/container/planimetrias'
 import SubTitle from '@/components/common/subTitle'
 import Title from '@/components/common/titles'
 
-const SectionCuatro = () => {
+const SectionCuatro: React.FC = () => {
   return (
     <Section>
       <VisibleContainer>
