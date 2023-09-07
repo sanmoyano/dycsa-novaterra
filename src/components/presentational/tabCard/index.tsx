@@ -32,7 +32,7 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
   return (
     <div className='w-full h-full flex justify-center'>
       <div ref={divRef} className='w-full h-full flex flex-col justify-center lg:flex-row md:justify-between mt-10'>
-        <div className='h-[400px] md:h-[350px] lg:h-[450px] 2xl:h-[500px] aspect-[4/3] relative w-full'>
+        <div className='h-[400px] md:h-[350px] lg:h-[400px] 2xl:h-[500px] aspect-[4/3] relative w-full'>
           <Image
             fill
             priority
@@ -43,7 +43,7 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
             src={tabs[activeTab].img}
           />
         </div>
-        <div className={`flex flex-col h-${divRef.current?.offsetHeight}px w-full mt-5 lg:py-3 lg:mt-0 lg:ml-8 xl:ml-16 xl:w-[60%] justify-center`}>
+        <div className={`flex flex-col h-${divRef.current?.offsetHeight}px w-full mt-5 lg:py-3 lg:mt-0 lg:ml-8 xl:ml-16 xl:w-[60%] lg:justify-between xl:justify-center`}>
           <h2 className='text-primary-100 font-bold text-2xl'>{tabs[activeTab].title}</h2>
           <p className='text-primary-300 mt-2'>{tabs[activeTab].description}</p>
           <p className='text-primary-300 mt-2'>{tabs[activeTab].description}</p>
