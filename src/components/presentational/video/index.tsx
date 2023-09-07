@@ -9,7 +9,7 @@ const VideoItem: React.FC<VideoProps> = ({ icon, title, description, link }) => 
       <svg className='w-8 h-8' fill='none' stroke='currentColor' strokeWidth={1.5} viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
         {icon}
       </svg>
-      <p className='text-primary-100 text-xl font-bold leading-5 '>{title}</p>
+      <h3 className='text-primary-100 text-xl font-bold leading-5 '>{title}</h3>
       <p className='text-primary-300'>{description}</p>
       <div className='flex flex-row w-full items-center space-x-1 text-primary-100'>
         <svg className='w-6 h-6' fill='none' stroke='currentColor' strokeWidth={1.5} viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
