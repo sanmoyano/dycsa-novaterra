@@ -33,7 +33,7 @@ const planimetrias: IPlanimetriasProps[] = [
 
 const PlanimetriasContainer:React.FC = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 justify-center gap-6 pt-10'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 justify-center gap-6 pt-10'>
       {planimetrias.map((item, index) => (
         <Planimetria key={index} datos={item.datos} img={item.img} title={item.title} />
       ))}
