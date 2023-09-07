@@ -3,7 +3,8 @@ import SectionsLayout from '@/components/common/sectionsLayout'
 import SectionUno from '@/sections/S01'
 import SectionDos from '@/sections/S02'
 import SectionTres from '@/sections/S03'
-import SectionCuatro from '@/sections/S004'
+import SectionCuatro from '@/sections/S04'
+import SectionCinco from '@/sections/S05'
 
 export default function Home () {
   return (
@@ -14,6 +15,7 @@ export default function Home () {
         <SectionDos />
         <SectionTres />
         <SectionCuatro />
+        <SectionCinco />
       </SectionsLayout>
     </main>
   )

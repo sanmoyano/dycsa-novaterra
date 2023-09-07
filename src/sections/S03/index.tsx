@@ -6,7 +6,7 @@ import VideosContainer from '@/components/container/listVideo'
 import LogoCasaGrande from '@/components/common/logoCasaGrande'
 
 import TitleS03 from './title'
-const SectionTres = () => {
+const SectionTres: React.FC = () => {
   return (
     <Section>
       <VisibleContainer>
