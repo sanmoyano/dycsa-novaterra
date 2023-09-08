@@ -38,7 +38,7 @@ const videos: VideoProps[] = [
 
 const VideosContainer = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-6 items-center'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center'>
       {videos.map((video, index) => (
         <VideoItem key={index} {...video} />
       ))}

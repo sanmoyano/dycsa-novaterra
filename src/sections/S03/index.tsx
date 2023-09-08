@@ -10,7 +10,7 @@ const SectionTres: React.FC = () => {
   return (
     <Section>
       <VisibleContainer>
-        <div className='grid grid-cols-1 lg:grid-cols-2 xl:gap-12 justify-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-12 justify-center'>
           <TitleS03 />
           <VideosContainer />
         </div>
