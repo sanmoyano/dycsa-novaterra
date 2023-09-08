@@ -3,6 +3,7 @@ import './globals.css'
 import localFont from 'next/font/local'
 
 import Header from '@/components/presentational/header'
+import Footer from '@/components/presentational/footer'
 
 import type { Metadata } from 'next'
 
@@ -44,6 +45,7 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
       <body className={`${pangram.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
