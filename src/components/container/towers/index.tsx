@@ -34,8 +34,14 @@ const towers: ITowersInfo[] = [
 
 const TowersContainer = () => {
   const [isOpen, setIsOpen] = useState<boolean[]>(Array(towers.length).fill(false))
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const handleOpen = (index:number) => {
+    if (activeIndex === null) {
+      setActiveIndex(index)
+    } else {
+      setActiveIndex(null)
+    }
     const updateIsOpen = [...isOpen]
 
     updateIsOpen[index] = !updateIsOpen[index]
@@ -47,6 +53,7 @@ const TowersContainer = () => {
       {towers.map((tower, index) => (
         <TowerCard
           key={index}
+          activeIndex={activeIndex}
           handleOpen={() => handleOpen(index)}
           index={index}
           isOpen={isOpen}
