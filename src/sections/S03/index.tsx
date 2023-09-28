@@ -23,7 +23,7 @@ const SectionTres: React.FC = () => {
           </div>
           {/* <VideosContainer /> */}
         </div>
-        <LogoCasaGrande />
+        <LogoCasaGrande visible heigth={200} logo='/logo/logo-casa-grande.svg' width={200} />
       </VisibleContainer>
     </Section>
   )
