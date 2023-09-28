@@ -11,7 +11,7 @@ const SectionDos:React.FC = () => {
     <Section>
       <VisibleContainer>
         <SubTitle content='Descubre la Elagancia y la Comodidad' cssProps='text-secondary-100' />
-        <Title content='Visión Integran del Espacio' />
+        <Title content='Visión Integral del Espacio' />
         <TowersContainer />
       </VisibleContainer>
     </Section>
