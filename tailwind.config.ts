@@ -30,7 +30,7 @@ const config: Config = {
       }
     }
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
   safelist: [
     'bg-primary',
     'text-primary',
