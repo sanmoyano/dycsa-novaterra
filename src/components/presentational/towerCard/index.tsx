@@ -52,14 +52,14 @@ const TowerCard: React.FC<Tower> = ({ activeIndex, title, description, alt, img,
             <Button
               cssProps='rounded-full text-center inline-flex items-center w-[40px] h-[40px'
               icon={isOpen[index]
-                ? <path d='M19.5 8.25l-7.5 7.5-7.5-7.5' strokeLinecap='round' strokeLinejoin='round' />
-                : <path d='M4.5 15.75l7.5-7.5 7.5 7.5' strokeLinecap='round' strokeLinejoin='round' />}
+                ? <path d='M15.75 19.5L8.25 12l7.5-7.5' strokeLinecap='round' strokeLinejoin='round' />
+                : <path d='M8.25 4.5l7.5 7.5-7.5 7.5' strokeLinecap='round' strokeLinejoin='round' />}
               onClick={handleOpen}
             />
           </span>
         </div>
       </DivContainer>
-      <DivContainer cssProps={`${isOpen[index] ? 'flex opacity-100' : 'hidden opacity-0'} bg-primary-200 lg:${activeIndex === null ? '' : activeIndex === 0 ? 'left-full' : 'right-full'} lg:bg-primary-100 lg:w-[500px]`}>
+      <DivContainer cssProps={`${isOpen[index] ? 'flex opacity-100' : 'hidden opacity-0'} bg-primary-200 ${activeIndex === null ? '' : activeIndex === 0 ? 'lg:left-full' : 'lg:right-full'} lg:bg-primary-100 lg:w-[500px] xl:w-[600px] `}>
         <ul className='w-full h-full'>
           {info.map((info, index) => (
             <ItemList key={index} cssProps='text-white' icon={<path clipRule='evenodd' d='M3 6a3 3 0 013-3h2.25a3 3 0 013 3v2.25a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm9.75 0a3 3 0 013-3H18a3 3 0 013 3v2.25a3 3 0 01-3 3h-2.25a3 3 0 01-3-3V6zM3 15.75a3 3 0 013-3h2.25a3 3 0 013 3V18a3 3 0 01-3 3H6a3 3 0 01-3-3v-2.25zm9.75 0a3 3 0 013-3H18a3 3 0 013 3V18a3 3 0 01-3 3h-2.25a3 3 0 01-3-3v-2.25z' fillRule='evenodd' />} info={info} />
@@ -71,3 +71,5 @@ const TowerCard: React.FC<Tower> = ({ activeIndex, title, description, alt, img,
 }
 
 export default TowerCard
+//  ? <path d='M19.5 8.25l-7.5 7.5-7.5-7.5' strokeLinecap='round' strokeLinejoin='round' />
+//             : <path d='M4.5 15.75l7.5-7.5 7.5 7.5' strokeLinecap='round' strokeLinejoin='round' />}
