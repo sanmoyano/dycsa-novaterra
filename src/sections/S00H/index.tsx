@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
           src={portadaImage}
         />
       </div>
-      <div className='flex flex-col justify-center w-full h-screen bg-gradient-to-b from-[rgba(0,0,0,.5)] to-transparent'>
+      <div className='flex flex-col justify-center w-full h-screen bg-gradient-to-b from-[rgba(3,19,51,.7)] to-transparent'>
         <div className='flex flex-col flex-nowrap h-fit w-full p-3.5 md:p-8 lg-12 xl:p-24 md:w-[60%] xl:w-[70%] 2xl:w-[50%] min-[1700px]:w-[40%]'>
           <HeroTitle content='Acá arriba, la vista es' span=' mejor.' />
           <div className='flex flex-row mt-10 w-full space-x-5'>
