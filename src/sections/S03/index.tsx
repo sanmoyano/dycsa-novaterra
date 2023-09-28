@@ -14,7 +14,7 @@ const SectionTres: React.FC = () => {
           <TitleS03 />
           <div className='h-full flex flex-col justify-between'>
             <div className='aspect-w-16 aspect-h-9'>
-              <iframe allowFullScreen allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' height='315' src='https://www.youtube.com/embed/MI7LWm2qhyQ?si=M2J4rn6kAxUdLsmo' title='YouTube video player' width='560' />
+              <iframe allowFullScreen allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' className='rounded-xl' height='315' src='https://www.youtube.com/embed/MI7LWm2qhyQ?si=M2J4rn6kAxUdLsmo' title='YouTube video player' width='560' />
             </div>
             <div className='flex flex-col h-full justify-center items-center space-y-5 text-primary-100 mt-10 text-justify lg:text-left'>
               <p>Con un frente imponente de 60 metros, Casagrande Laplace se encuentra en una zona increíblemente privilegiada en el corazón de Villa Belgrano, al norte de la Capital de Córdoba.</p>
