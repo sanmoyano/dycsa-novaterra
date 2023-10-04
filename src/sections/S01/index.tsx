@@ -1,9 +1,9 @@
 import React from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 import Section from '@/components/common/section'
 import Title from '@/components/common/titles'
-import TabsContainer from '@/components/container/tabs'
+// import TabsContainer from '@/components/container/tabs'
 import VisibleContainer from '@/components/container/visibleContainer'
 
 const SectionUno: React.FC = () => {
