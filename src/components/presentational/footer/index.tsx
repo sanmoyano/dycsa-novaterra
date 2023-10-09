@@ -23,7 +23,7 @@ const ItemInput:React.FC<IntputProps> = ({ id, label, placeholder, type, htmlFor
 
 const Footer: React.FC = () => {
   return (
-    <div className='flex flex-col lg:flex-row justify-center w-full bg-gradient-to-t from-[rgba(3,19,51,.7)] to-transparent'>
+    <div className='flex flex-col lg:flex-row justify-center w-full bg-gradient-to-t from-[rgba(3,19,51,.7)] to-transparent' id='contacto'>
       <div className='w-full lg:w-1/2 h-full px-3.5 py-8 sm:px-8 md:p-12 xl:p-24'>
         <form action='#' className='mb-6'>
           <ItemInput htmlFor='email' id='email' label='Email' placeholder='email@gmail.com' type='email' />
@@ -36,11 +36,11 @@ const Footer: React.FC = () => {
           <Button content='Enviar' cssProps='w-full' onClick={() => console.log('enviar')} />
         </form>
         <p className='mb-2 text-sm text-white'>
-          <a className='hover:underline' href='#'>info@company.com</a>
+          <a className='hover:underline' href='#'>ventas@dycsa.com.ar</a>
         </p>
-        <p className='text-sm text-white'>
+        {/* <p className='text-sm text-white'>
           <a className='hover:underline' href='#'>212-456-7890</a>
-        </p>
+        </p> */}
       </div>
       <div className='w-full lg:w-1/2 flex flex-col items-center justify-center'>
         <LogoCasaGrande heigth={200} logo='/logo/slogan-casa-grande.svg' width={300} />

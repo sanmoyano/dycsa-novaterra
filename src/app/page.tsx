@@ -8,7 +8,7 @@ import SectionCinco from '@/sections/S05'
 
 export default function Home () {
   return (
-    <main>
+    <main className='scroll-smooth'>
       <HeroSection />
       <SectionsLayout>
         <SectionUno />

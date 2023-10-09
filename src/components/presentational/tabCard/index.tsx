@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Button from '@/components/common/button'
 
@@ -51,7 +52,9 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
               <Dato key={index} dato={dato.dato} index={index} number={dato.number} />
             ))}
           </div>
-          <Button content='Conoce más' cssProps='mt-6' onClick={() => console.log('')} />
+          <Link href='#depto-modelo'>
+            <Button content='Conoce más' cssProps='mt-6' />
+          </Link>
         </div>
       </div>
     </div>
