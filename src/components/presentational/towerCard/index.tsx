@@ -45,15 +45,14 @@ const TowerCard: React.FC<Tower> = ({ activeIndex, title, description, alt, img,
       <DivContainer cssProps='bg-gradient-to-b from-[rgba(0,0,0,.3)] to-transparent'>
         <div className={`${isOpen[index] ? 'hidden' : 'flex flex-col'} lg:flex lg:flex-col space-y-4`}>
           <h2 className='text-4xl text-white font-bold'>{title}</h2>
-          {/* <p className='text-white'>{description}</p> */}
         </div>
         <div className='flex justify-end z-10 absolute bottom-4 right-4'>
           <span title='Ver mas'>
             <Button
               cssProps='rounded-full text-center inline-flex items-center w-[40px] h-[40px'
               icon={isOpen[index]
-                ? <path d='M15.75 19.5L8.25 12l7.5-7.5' strokeLinecap='round' strokeLinejoin='round' />
-                : <path d='M8.25 4.5l7.5 7.5-7.5 7.5' strokeLinecap='round' strokeLinejoin='round' />}
+                ? <path d='M19.5 12h-15' strokeLinecap='round' strokeLinejoin='round' />
+                : <path d='M12 4.5v15m7.5-7.5h-15' strokeLinecap='round' strokeLinejoin='round' />}
               onClick={handleOpen}
             />
           </span>
@@ -71,5 +70,3 @@ const TowerCard: React.FC<Tower> = ({ activeIndex, title, description, alt, img,
 }
 
 export default TowerCard
-//  ? <path d='M19.5 8.25l-7.5 7.5-7.5-7.5' strokeLinecap='round' strokeLinejoin='round' />
-//             : <path d='M4.5 15.75l7.5-7.5 7.5 7.5' strokeLinecap='round' strokeLinejoin='round' />}

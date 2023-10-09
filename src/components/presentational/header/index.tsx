@@ -42,8 +42,8 @@ const Header: React.FC = () => {
             <NavItem closeMenu={handleCloseMenu} content='Ubicación' url='#ubicacion' />
           </ul>
         </div>
-        <Link href='#contacto'>
-          <Button content='Contactanos' cssProps='hidden md:block' />
+        <Link className='hidden md:block' href='#contacto'>
+          <Button content='Contactanos' />
         </Link>
       </nav>
     </header>

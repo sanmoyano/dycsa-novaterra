@@ -36,11 +36,11 @@ const Footer: React.FC = () => {
           <Button content='Enviar' cssProps='w-full' onClick={() => console.log('enviar')} />
         </form>
         <p className='mb-2 text-sm text-white'>
-          <a className='hover:underline' href='#'>info@company.com</a>
+          <a className='hover:underline' href='#'>ventas@dycsa.com.ar</a>
         </p>
-        <p className='text-sm text-white'>
+        {/* <p className='text-sm text-white'>
           <a className='hover:underline' href='#'>212-456-7890</a>
-        </p>
+        </p> */}
       </div>
       <div className='w-full lg:w-1/2 flex flex-col items-center justify-center'>
         <LogoCasaGrande heigth={200} logo='/logo/slogan-casa-grande.svg' width={300} />

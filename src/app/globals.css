@@ -33,12 +33,6 @@
   }
 }
 
-@layer base {
-  html {
-    @apply scroll-smooth
-  }
-}
-
 body {
   font-family: var(--font-pangram-sans);
   color: rgb(var(--foreground-rgb));
