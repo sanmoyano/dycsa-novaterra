@@ -46,7 +46,6 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
         <div className={`flex flex-col h-${divRef.current?.offsetHeight}px w-full mt-5 lg:py-3 lg:mt-0 lg:ml-8 xl:ml-16 xl:w-[60%] lg:justify-between xl:justify-center`}>
           <h2 className='text-primary-100 font-bold text-2xl'>{tabs[activeTab].title}</h2>
           <p className='text-primary-300 mt-2'>{tabs[activeTab].description}</p>
-          <p className='text-primary-300 mt-2'>{tabs[activeTab].description}</p>
           <div className='flex flex-row space-x-8 mt-6'>
             {tabs[activeTab].datos.map((dato, index) => (
               <Dato key={index} dato={dato.dato} index={index} number={dato.number} />
