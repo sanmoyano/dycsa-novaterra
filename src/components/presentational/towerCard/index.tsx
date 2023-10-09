@@ -70,8 +70,3 @@ const TowerCard: React.FC<Tower> = ({ activeIndex, title, description, alt, img,
 }
 
 export default TowerCard
-
-{ /* <DivContainer cssProps={`${isOpen[index] ? 'flex opacity-100' : index === 0 ? 'translate-x-0' : '-translate-x-0'} bg-primary-200 ${activeIndex === null ? '' : activeIndex === 0 ? 'lg:translate-x-[500px]' : 'lg:-translate-x-[500px]'} lg:bg-primary-100 lg:w-full xl:w-full ease-in-out duration-300`}>
-        <ul className='flex flex-col w-full h-full justify-center space-y-5'></ul> */ }
-
-{ /* <DivContainer cssProps={`${isOpen[index] ? 'flex opacity-100' : 'hidden opacity-0'} bg-primary-200 ${activeIndex === null ? '' : activeIndex === 0 ? 'lg:left-full' : 'lg:right-full'} lg:bg-primary-100 lg:w-[500px] xl:w-[600px] `}></DivContainer> */ }
