@@ -2,7 +2,7 @@ import React from 'react'
 
 type ButtonProps = {
   content?: string
-  onClick: () => void
+  onClick?: () => void
   transparent?: boolean
   icon?: React.ReactNode
   cssProps?:string

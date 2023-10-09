@@ -23,7 +23,7 @@ const ItemInput:React.FC<IntputProps> = ({ id, label, placeholder, type, htmlFor
 
 const Footer: React.FC = () => {
   return (
-    <div className='flex flex-col lg:flex-row justify-center w-full bg-gradient-to-t from-[rgba(3,19,51,.7)] to-transparent'>
+    <div className='flex flex-col lg:flex-row justify-center w-full bg-gradient-to-t from-[rgba(3,19,51,.7)] to-transparent' id='contacto'>
       <div className='w-full lg:w-1/2 h-full px-3.5 py-8 sm:px-8 md:p-12 xl:p-24'>
         <form action='#' className='mb-6'>
           <ItemInput htmlFor='email' id='email' label='Email' placeholder='email@gmail.com' type='email' />

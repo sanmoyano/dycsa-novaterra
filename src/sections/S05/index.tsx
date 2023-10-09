@@ -18,7 +18,9 @@ const SectionCinco: React.FC = () => {
               </span>
             </h2>
             <p className='text-white text-center'>Av. Laplace esq. Julio Verne. Villa Belgrano. Córdoba Capital.M. Berthelot 5225 (casi esquina Av. Laplace). Lunes a Viernes de 16 a 20 hs - Sábados de 10 a 14 hs.</p>
-            <Button content='Conocer más' onClick={() => console.log('holis')} />
+            <Link href='#contacto'>
+              <Button content='Contactanos' />
+            </Link>
             <p className='text-white text-xl lg:text-2xl text-center'>Viví en modo <span className='font-bold'>Casagrande</span></p>
           </div>
         </div>

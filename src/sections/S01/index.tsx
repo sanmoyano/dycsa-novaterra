@@ -7,7 +7,7 @@ import VisibleContainer from '@/components/container/visibleContainer'
 
 const SectionUno: React.FC = () => {
   return (
-    <Section>
+    <Section id='ubicacion'>
       <VisibleContainer>
         <Title content='Ubicación privilegiada en una zona exclusiva' cssProps='text-center' />
         <TabsContainer />

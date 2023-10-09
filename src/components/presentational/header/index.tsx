@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Link from 'next/link'
 
 import Button from '@/components/common/button'
 import NavItem from '@/components/common/nav'
@@ -37,11 +38,13 @@ const Header: React.FC = () => {
         </button>
         <div className={`${!isAria ? 'hidden' : ''} w-full md:block md:w-auto text-white`} id='navbar-default'>
           <ul className={`flex flex-col mt-5 p-4 space-y-2 ${isAria ? 'bg-gray-200 rounded border border-white' : ''} md:flex-row md:mt-0 md:space-x-10 md:space-y-0 md:bg-transparent md:p-0 md:border-none`}>
-            <NavItem closeMenu={handleCloseMenu} content='Proyecto' url='/' />
-            <NavItem closeMenu={handleCloseMenu} content='Ubicación' url='/' />
+            <NavItem closeMenu={handleCloseMenu} content='Proyecto' url='#proyecto' />
+            <NavItem closeMenu={handleCloseMenu} content='Ubicación' url='#ubicacion' />
           </ul>
         </div>
-        <Button content='Contactanos' cssProps='hidden md:block' onClick={() => console.log('contacto')} />
+        <Link href='#contacto'>
+          <Button content='Contactanos' cssProps='hidden md:block' />
+        </Link>
       </nav>
     </header>
   )
