@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Button from '@/components/common/button'
 
 import { TabProp } from '../tabsList'
-
 type DatoProps = {
   number:number
   dato:string
@@ -31,7 +30,7 @@ const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
   const divRef = useRef<HTMLDivElement>(null)
 
   return (
-    <div className='w-full h-full flex justify-center'>
+    <div aria-label={`${activeTab}`} className='w-full h-full flex justify-center items-center'>
       <div ref={divRef} className='w-full h-full flex flex-col justify-center lg:flex-row md:justify-between mt-10'>
         <div className='h-[400px] md:h-[350px] lg:h-[400px] 2xl:h-[500px] aspect-[4/3] relative w-full'>
           <Image
