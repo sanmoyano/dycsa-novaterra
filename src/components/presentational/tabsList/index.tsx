@@ -3,9 +3,7 @@ import dynamic from 'next/dynamic'
 
 import { ITabsInfo } from '@/components/container/tabs'
 
-// import TabCard from '../tabCard/index'
-
-const DynamicTabCard = dynamic(() => import('../tabCard/index'))
+const DynamicTabCard = dynamic(() => import('../tabCard/index'), { loading: () => <p>Loading...</p> })
 
 export type TabProp = {
   tabs:ITabsInfo[]
