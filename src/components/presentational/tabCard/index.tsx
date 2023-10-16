@@ -29,6 +29,8 @@ const Dato: React.FC<DatoProps> = ({ number, dato, index }) => {
 const TabCard:React.FC<TabProp> = ({ activeTab, tabs }) => {
   const divRef = useRef<HTMLDivElement>(null)
 
+  console.log(activeTab)
+
   return (
     <div aria-label={`${activeTab}`} className='w-full h-full flex justify-center items-center'>
       <div ref={divRef} className='w-full h-full flex flex-col justify-center lg:flex-row md:justify-between mt-10'>
