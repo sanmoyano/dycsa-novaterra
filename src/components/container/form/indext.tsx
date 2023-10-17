@@ -6,12 +6,12 @@ import Form from '@/components/presentational/form'
 export type DataUser = {
   email:string
   name:string
-  tel:number
+  tel:number | string
   message:string
 }
 
 const FormContainer = () => {
-  const [userData, setUserData] = useState<DataUser>({ email: '', name: '', tel: 1234567890, message: '' })
+  const [userData, setUserData] = useState<DataUser>({ email: '', name: '', tel: '', message: '' })
 
   return (
     <Form dataUser={userData} />
