@@ -13,8 +13,22 @@ export type DataUser = {
 const FormContainer = () => {
   const [userData, setUserData] = useState<DataUser>({ email: '', name: '', tel: '', message: '' })
 
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+
+    setUserData({
+      ...userData,
+      [name]: value
+    })
+  }
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    console.log(e)
+  }
+
   return (
-    <Form dataUser={userData} />
+    <Form dataUser={userData} handleOnChange={handleOnChange} />
   )
 }
 
