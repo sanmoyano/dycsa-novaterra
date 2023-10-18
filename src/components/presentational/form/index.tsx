@@ -37,7 +37,6 @@ const Form:React.FC<FormProps> = ({ dataUser, handleOnChange, formRef, submit, i
     <div className='w-full lg:w-1/2 h-full px-3.5 py-8 sm:px-8 md:p-12 xl:p-24'>
       <form ref={formRef} action='#' className='mb-6' onSubmit={submit}>
         <ItemInput
-          disabled
           id='project'
           label='Proyecto'
           name='project'
