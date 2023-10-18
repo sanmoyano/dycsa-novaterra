@@ -7,7 +7,7 @@ import Link from 'next/link'
 import HeroTitle from '@/components/common/heroTitle'
 import Button from '@/components/common/button'
 
-import portadaImage from '../../../public/images/portada-casa-grande.jpg'
+import portadaImage from '../../../public/images/portada-novaterra.jpg'
 
 const HeroSection: React.FC = () => {
   return (
@@ -24,9 +24,9 @@ const HeroSection: React.FC = () => {
         />
       </div>
       <div className='flex flex-col justify-center w-full h-screen bg-gradient-to-b from-[rgba(3,19,51,.7)] to-transparent'>
-        <div className='flex flex-col flex-nowrap h-fit w-full p-3.5 md:p-8 lg-12 xl:p-24 md:w-[65%] xl:w-[60%] 2xl:w-[60%] min-[1700px]:w-[40%]'>
-          <HeroTitle content='Amplia tu calidad de vida. Vivi a lo grande' />
-          <p className='text-white mt-5 lg:w-3/4'>Ubicado en el corazon de Villa Belgrano Casagrande es la propuesta ideal para quienes disfrutamos el confort y buscamos potenciar nuestra calidad de vida.</p>
+        <div className='flex flex-col flex-nowrap h-fit w-full p-3.5 md:p-8 lg-12 xl:p-24 md:w-[65%] xl:w-[65%] 2xl:w-[60%] min-[1700px]:w-[40%]'>
+          <HeroTitle content='Invertí en Novaterra III, invertí para toda la vida' />
+          <p className='text-white mt-5 lg:w-3/4'>La propuesta para vivir más seductora e innovadora de Barrio Guemes. Si te gusta Güemes, Novaterra III es tu oportunidad ideal para disfrutar de todo lo que te gusta, en un solo lugar..</p>
           <div className='flex flex-row mt-10 w-full space-x-5'>
             <Link href='#contacto'>
               <Button content='Contactanos' />
