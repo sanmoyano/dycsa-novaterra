@@ -9,11 +9,11 @@ type InfoProps = {
 
 const ItemList: React.FC<InfoProps> = ({ info, cssProps, icon, stroke }) => {
   return (
-    <li className={`flex flex-row ${cssProps} w-full items-center space-x-1`}>
-      <svg className='w-6 h-6' fill={!stroke ? 'currentColor' : ''} stroke={stroke ? 'currentColor' : ''} strokeWidth={stroke ? '1.5' : ''} viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+    <li className={`flex flex-row ${cssProps} w-full lg:w-2/3 items-center space-x-4`}>
+      <svg className='w-6 h-6' fill='none' stroke='currentColor' strokeWidth={1.5} viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
         {icon}
       </svg>
-      <p className='text-xs xl:text-sm w-fit'>{info}</p>
+      <p className='text-md xl:text-lg w-fit'>{info}</p>
     </li>
   )
 }

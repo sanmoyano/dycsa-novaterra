@@ -8,7 +8,7 @@ import VisibleContainer from '@/components/container/visibleContainer'
 
 const SectionUno: React.FC = () => {
   return (
-    <Section>
+    <Section id='ubicacion'>
       <VisibleContainer>
         <div className='flex fex-col md:flex-row'>
           <div className='w-1/2 bg-[red]'>
