@@ -9,10 +9,11 @@ export type DataUser = {
   name:string
   tel:number | string
   message:string
+  project:string
 }
 
 const FormContainer = () => {
-  const [userData, setUserData] = useState<DataUser>({ email: '', name: '', tel: '', message: '' })
+  const [userData, setUserData] = useState<DataUser>({ email: '', name: '', tel: '', message: '', project: 'Casa Grande' })
   const formRef = useRef<HTMLFormElement>(null)
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -56,7 +57,7 @@ const FormContainer = () => {
         })
     }
 
-    setUserData({ email: '', name: '', tel: '', message: '' })
+    setUserData({ ...userData, email: '', name: '', tel: '', message: '' })
   }
 
   const isDisabled = userData.email === '' || userData.name === '' || userData.tel === '' || userData.message === ''
