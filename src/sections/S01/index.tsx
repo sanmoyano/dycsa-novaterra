@@ -14,8 +14,8 @@ const SectionUno: React.FC = () => {
         <div className='w-full h-[500px] md:h-[600px] lg:h-[500px] xl:h-[600px] flex flex-col lg:flex-row items-center justify-center relative'>
           <div className='w-full lg:w-2/3 bg-primary-100 h-full absolute right-0 rounded-xl' />
           <div className='flex flex-col lg:flex-row justify-between lg:justify-evenly items-center absolute'>
-            <div className='bg-[green] aspect-16/9 rounded-xl'>
-              <Image alt='novaterra render' className='rounded-xl' placeholder='blur' quality={100} src={novaterraRender} />
+            <div className='aspect-16/9 rounded-xl shadow-lg'>
+              <Image alt='novaterra render' className='rounded-xl' placeholder='blur' quality={80} sizes='auto' src={novaterraRender} />
             </div>
             <div className='flex flex-col space-y-2 w-full lg:w-1/2 p-6 rounded-xl h-full'>
               <Title content='Invertí en lo que avanza' cssProps='text-left text-white' />
