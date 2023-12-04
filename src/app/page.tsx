@@ -14,7 +14,7 @@ export default function Home () {
         <SectionUno />
         <SectionDos />
         <SectionTres />
-        <SectionCuatro />
+        {/* <SectionCuatro /> */}
         <SectionCinco />
       </SectionsLayout>
     </main>
