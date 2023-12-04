@@ -5,11 +5,13 @@ import { ToastContainer } from 'react-toastify'
 import LogoCasaGrande from '@/components/common/logoCasaGrande'
 import FormContainer from '@/components/container/form/indext'
 import 'react-toastify/dist/ReactToastify.css'
+// import HubSpotContactForm from '@/components/container/hubSpotForm'
 
 const Footer: React.FC = () => {
   return (
     <div className='flex flex-col lg:flex-row justify-center w-full bg-gradient-to-t from-[rgba(3,19,51,.7)] to-transparent' id='contacto'>
       <ToastContainer />
+      {/* <HubSpotContactForm /> */}
       <FormContainer />
       <div className='w-full lg:w-1/2 flex flex-col items-center justify-center'>
         <LogoCasaGrande heigth={200} logo='/logo/slogan-casa-grande.svg' width={300} />
