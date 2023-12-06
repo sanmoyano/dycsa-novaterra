@@ -13,7 +13,7 @@ export type DataUser = {
 }
 
 const FormContainer = () => {
-  const [userData, setUserData] = useState<DataUser>({ email: '', name: '', tel: '', message: '', project: 'Casa Grande' })
+  const [userData, setUserData] = useState<DataUser>({ email: '', name: '', tel: '', message: '', project: 'Novaterra III' })
   const formRef = useRef<HTMLFormElement>(null)
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
