@@ -23,7 +23,7 @@ const SectionCinco: React.FC = () => {
             <Link href='#contacto'>
               <Button content='Contactanos' />
             </Link>
-            <p className='text-white'>Comunicate con nosotros en el horario que te quede mas comodo, al numero <span className='font-bold'><a href='https://wa.me/5493518192818' target='_blank'>351 819-2818</a></span></p>
+            <p className='text-white'>Comunicate con nosotros en el horario que te quede mas comodo, al numero <span className='font-bold underline-text before:bg-white before:h-[1px]'><a href='https://wa.me/5493518192818' target='_blank'>351 819-2818</a></span></p>
           </div>
         </div>
       </VisibleContainer>
