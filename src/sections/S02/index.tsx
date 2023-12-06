@@ -1,12 +1,10 @@
 import React from 'react'
-// import Image from 'next/image'
 
 import Title from '@/components/common/titles'
 import Section from '@/components/common/section'
 import VisibleContainer from '@/components/container/visibleContainer'
 import SubTitle from '@/components/common/subTitle'
 
-// import portadaImage from '../../../public/images/portada-novaterra.jpg'
 const SectionDos:React.FC = () => {
   return (
     <Section>
