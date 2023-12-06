@@ -14,7 +14,7 @@ import renderCuatro from '../../../public/images/render-4.jpg'
 
 const SectionTres: React.FC = () => {
   return (
-    <Section>
+    <Section id='proyecto'>
       <VisibleContainer>
         <Title content='Características' />
         <SubTitle content='Lorem ipsum.' cssProps='text-xl text-primary-100' />

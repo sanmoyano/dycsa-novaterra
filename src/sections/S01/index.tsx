@@ -9,7 +9,7 @@ import novaterraRender from '../../../public/images/render-3.jpg'
 
 const SectionUno: React.FC = () => {
   return (
-    <Section id='ubicacion'>
+    <Section>
       <VisibleContainer>
         <div className='w-full h-[550px] md:h-[700px] lg:h-[550px] xl:h-[600px] flex flex-col lg:flex-row items-center justify-center relative'>
           <div className='w-full lg:w-2/3 bg-primary-100 h-full lg:h-5/6 absolute right-0 rounded-2xl' />

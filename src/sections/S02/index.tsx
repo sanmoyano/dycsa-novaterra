@@ -7,7 +7,7 @@ import SubTitle from '@/components/common/subTitle'
 
 const SectionDos:React.FC = () => {
   return (
-    <Section>
+    <Section id='ubicacion'>
       <VisibleContainer>
         <Title content='¿Te vendrías a Guemes?' />
         <div className='w-full h-fit flex flex-col relative items-center py-12'>
