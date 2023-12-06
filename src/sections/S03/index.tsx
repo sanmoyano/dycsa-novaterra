@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Section from '@/components/common/section'
 import VisibleContainer from '@/components/container/visibleContainer'
 import Title from '@/components/common/titles'
+import SubTitle from '@/components/common/subTitle'
 
 import renderUno from '../../../public/images/render-1.jpeg'
 import renderDos from '../../../public/images/render-2.jpg'
@@ -16,9 +17,10 @@ const SectionTres: React.FC = () => {
     <Section>
       <VisibleContainer>
         <Title content='Características' />
-        <div className='h-screen w-full'>
-          <Carousel>
-            <div className='h-3/4 w-full relative'>
+        <SubTitle content='Lorem ipsum.' cssProps='text-xl text-primary-100' />
+        <div className='h-[500px] md:h-screen w-full'>
+          <Carousel pauseOnHover indicators={false}>
+            <div className='h-screen w-full relative'>
               <Image
                 fill
                 priority
@@ -29,7 +31,7 @@ const SectionTres: React.FC = () => {
                 src={renderUno}
               />
             </div>
-            <div className='h-3/4 w-full relative'>
+            <div className='h-screen w-full relative'>
               <Image
                 fill
                 priority
@@ -40,7 +42,7 @@ const SectionTres: React.FC = () => {
                 src={renderDos}
               />
             </div>
-            <div className='h-3/4 w-full relative'>
+            <div className='h-screen w-full relative'>
               <Image
                 fill
                 priority
@@ -51,7 +53,7 @@ const SectionTres: React.FC = () => {
                 src={renderTres}
               />
             </div>
-            <div className='h-3/4 w-full relative'>
+            <div className='h-screen w-full relative'>
               <Image
                 fill
                 priority
